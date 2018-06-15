@@ -1,4 +1,4 @@
-# Predicting Loan Charge-offs on LendingClub.com
+# Predicting Loan Defaults on LendingClub.com
 [LendingClub](https://www.lendingclub.com/) is a US peer-to-peer lending company and the world's largest peer-to-peer lending platform. In this project, I build machine learning models to predict the probability that a loan on LendingClub will charge off (default). These models could help LendingClub investors make better-informed investment decisions. I use a 1.8 GB LendingClub [dataset](https://www.kaggle.com/wordsforthewise/lending-club) with 1,646,801 loans and 150 variables for each loan.
 
 In training the models, I only use features that are known to investors before they choose to invest in the loan. These features include, among others, the borrower's income, FICO score, and debt-to-income ratio, and the loan amount, purpose, grade, and interest rate.
