@@ -1,2 +1,8 @@
-# lending-club
-Prediction of loan charge-offs on lendingclub.com.
+# Predicting Loan Charge-offs on LendingClub.com
+[LendingClub](https://www.lendingclub.com/) is a US peer-to-peer lending company and the world's largest peer-to-peer lending platform. In this project, I build machine learning models to predict the probability that a loan on LendingClub will charge off (default). We only use data on each loan that is available to potential investors before choosing to invest in the loan, including information about the borrower (income, employment length, FICO score, debt-to-income ratio, etc.) and the loan listing (the loan amount, loan purpose, loan grade, interest rate, installment, etc.). This predictive model could help LendingClub investors make better-informed investment decisions.
+
+The model-building process includes several steps, including: removing loan features with significant missing data, or that aren't known to investors; exploring, transforming, and visualizing the data; creating dummy variables for categorical data; calculating Pearson correlations between predictors and the response; and training three models, namely logistic regression, random forest, and k-nearest neighbors.
+
+I found that the three aforementioned models performed similarly well according to a cross-validated AUROC score on the training data. I selected logistic regression (with ridge penalty) as the final model because it was the fastest to train, and this model obtained an AUROC score of 0.689 on a test set consisting of the most recent 10% of the loans.
+
+I also found that, according to Pearson correlations, the most important variables for predicting charge-off are the loan interest rate and term, and the borrower's FICO score and debt-to-income ratio.
